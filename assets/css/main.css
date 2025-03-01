@@ -769,7 +769,7 @@ button {
 /* 4k scn */
 @media screen and (min-width: 4048px) {
   body {
-    zoom: 2;
+    zoom: 2.1;
   }
 }
 
