@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Storm&display=swap");
 
 :root {
   --title-color: hsl(0, 0%, 100%);
@@ -9,6 +9,7 @@
   --body-color: hsl(0, 0%, 11%);
 
   --ff-poppins: "Poppins", sans-serif;
+  --ff-rubikStorm: "Rubik Storm", system-ui;
 
   --fs-lg: 1.25rem;
   --fs-md: 0.975rem;
@@ -138,8 +139,7 @@ button {
 
 .social__list {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  top: var(--space-3);
   right: var(--space-1);
   display: flex;
   flex-direction: column;
@@ -541,6 +541,23 @@ button {
 }
 
 /* footer */
+.footer__data {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.footer__logo {
+  font-family: var(--ff-rubikStorm);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--fs-lg);
+}
+
+.footer__description {
+  color: var(--subtitle-color);
+  font-size: var(--fs-xs);
+}
+
 .footer__list {
   display: flex;
   justify-content: center;
@@ -550,7 +567,7 @@ button {
 
 .footer__link {
   color: var(--text-color);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
   transition: 0.4s;
 }
 
