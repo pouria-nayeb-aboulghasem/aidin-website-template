@@ -58,13 +58,10 @@ let homeSwiper = new Swiper(".home__swiper", {
 });
 
 let recentSwiper = new Swiper(".recent__swiper", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.2,
     spaceBetween: 24,
     grabCursor: true,
     breakpoints: {
-        320: {
-            slidesPerView: 2.2,
-        },
         576: {
             slidesPerView: 3
         },

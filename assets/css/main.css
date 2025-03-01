@@ -233,6 +233,10 @@ button {
 }
 
 /* recent */
+.recent {
+  padding-top: 6rem;
+}
+
 .recent__title {
   font-size: var(--fs-lg);
   color: var(--title-color);
@@ -268,7 +272,7 @@ button {
   opacity: 0;
   padding: 0.5rem 0.5rem 1.5rem;
   margin-bottom: var(--space-1);
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.65);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -305,6 +309,7 @@ button {
   border-top-left-radius: var(--space-1);
   font-size: var(--fs-sm);
   z-index: var(--zi-soft);
+  border: 1px solid var(--text-color);
 }
 
 .recent__button i {
@@ -368,6 +373,7 @@ button {
   position: absolute;
   width: 150px;
   height: 160px;
+  border-radius: 0.5rem;
 }
 
 .about__img--1 {
@@ -394,6 +400,7 @@ button {
   background-color: var(--container-color);
   color: var(--text-color);
   margin-top: var(--space-2);
+  border-radius: 0.5rem;
 }
 
 .button__about:hover {
