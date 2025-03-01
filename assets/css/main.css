@@ -541,6 +541,10 @@ button {
 }
 
 /* footer */
+.footer {
+  margin-block: 6rem;
+}
+
 .footer__data {
   text-align: center;
   margin-bottom: var(--space-3);
