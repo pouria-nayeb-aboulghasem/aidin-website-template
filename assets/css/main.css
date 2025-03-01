@@ -587,6 +587,10 @@ button {
   opacity: 0.75;
 }
 
+.footer__list--social .footer__link {
+  font-size: var(--fs-md);
+}
+
 .footer__copyright {
   display: flex;
   flex-direction: column;
