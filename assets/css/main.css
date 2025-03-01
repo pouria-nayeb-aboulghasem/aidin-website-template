@@ -290,7 +290,8 @@ button {
   left: 0;
   background-color: var(--text-color);
   color: var(--body-color);
-  padding: var(--space-1);
+  font-size: var(--fs-xs);
+  padding: 0.25rem;
 }
 
 .recent__button {
@@ -619,6 +620,11 @@ button {
 
   .home__swiper {
     padding-top: 400px;
+  }
+
+  .recent__category {
+    padding: var(--space-1);
+    font-size: var(--fs-lg);
   }
 }
 
