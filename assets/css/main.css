@@ -70,7 +70,7 @@ img {
 }
 
 .section {
-  margin-block: 6rem;
+  padding-block: 6rem;
 }
 
 button {
@@ -654,7 +654,7 @@ button {
   }
 
   .section {
-    margin-block: 8rem;
+    padding-block: 8rem;
   }
 
   .header {
