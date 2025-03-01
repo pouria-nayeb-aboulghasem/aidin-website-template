@@ -764,15 +764,18 @@ button {
   .home__figure {
     width: 800px;
   }
-
-  .home__data {
-    top: 400px;
-  }
 }
 
 /* 4k scn */
 @media screen and (min-width: 4048px) {
   body {
     zoom: 2;
+  }
+}
+
+/* 5k scn */
+@media screen and (min-width: 5119px) {
+  body {
+    zoom: 2.3;
   }
 }
