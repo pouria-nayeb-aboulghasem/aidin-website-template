@@ -43,15 +43,48 @@ homeSlides.forEach(homeSlide => {
 // swiper
 
 let homeSwiper = new Swiper(".home__swiper", {
-    slidesPerView: 2,
+    slidesPerView: 1.1,
     spaceBetween: 24,
     grabCursor: true,
     breakpoints: {
         576: {
-            slidesPerView: 3
+            slidesPerView: 2
         },
         768: {
             slidesPerView: 5,
+            spaceBetween: 48
+        }
+    }
+});
+
+let recentSwiper = new Swiper(".recent__swiper", {
+    slidesPerView: 1.1,
+    spaceBetween: 24,
+    grabCursor: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 2.2,
+        },
+        576: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 48
+        }
+    }
+});
+
+let newsSwiper = new Swiper(".news__swiper", {
+    slidesPerView: 1.5,
+    spaceBetween: 24,
+    grabCursor: true,
+    breakpoints: {
+        576: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3,
             spaceBetween: 48
         }
     }

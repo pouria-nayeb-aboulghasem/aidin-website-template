@@ -14,13 +14,13 @@
     <header class="header" id="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item" title="منو">
-                    <a href="#" class="nav__link">
+                <!-- <li class="nav__item" title="منو">
+                    <button class="nav__button">
                         <i class="ri-list-check-2"></i>
-                    </a>
-                </li>
+                    </button>
+                </li> -->
                 <li class="nav__item" title="خانه">
-                    <a href="#home" class="nav__link">
+                    <a href="#home" class="nav__link active">
                         <i class="ri-home-2-line"></i>
                     </a>
                 </li>
@@ -42,6 +42,24 @@
             </ul>
         </nav>
     </header>
+
+    <ul class="social__list">
+        <li class="social__item" title="تلفن تماس">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-phone-line"></i>
+            </a>
+        </li>
+        <li class="social__item" title="اینستاگرام">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-instagram-line"></i>
+            </a>
+        </li>
+        <li class="social__item" title="وانس آپ">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-whatsapp-line"></i>
+            </a>
+        </li>
+    </ul>
 
     <main class="main" id="main">
 
@@ -153,8 +171,89 @@
             </div>
         </div>
 
-        <div class="recent" id="recent" data-section="recent">
+        <div class="recent section" id="recent" data-section="recent">
+            <div class="recent__container container">
+                <section class="recent__content">
+                    <header class="recent__header">
+                        <h2 class="recent__title">Project</h2>
+                        <h6 class="recent__subtitle">Latest projects</h6>
+                    </header>
 
+                    <div class="recent__swiper swiper">
+                        <ul class="recent__list swiper-wrapper">
+                            <li class="recent__item swiper-slide">
+                                <a href="#" class="recent__link">
+                                    <figure class="recent__figure">
+                                        <img src="assets/imgs/showcases/education.webp" alt="" class="recent__img">
+                                        <figcaption class="recent__caption">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</figcaption>
+                                    </figure>
+                                    <h3 class="recent__category">Animation</h3>
+                                    <button class="recent__button">
+                                        More info <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="recent__item swiper-slide">
+                                <a href="#" class="recent__link">
+                                    <figure class="recent__figure">
+                                        <img src="assets/imgs/showcases/education.webp" alt="" class="recent__img">
+                                        <figcaption class="recent__caption">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</figcaption>
+                                    </figure>
+                                    <h3 class="recent__category">Animation</h3>
+                                    <button class="recent__button">
+                                        More info <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="recent__item swiper-slide">
+                                <a href="#" class="recent__link">
+                                    <figure class="recent__figure">
+                                        <img src="assets/imgs/showcases/education.webp" alt="" class="recent__img">
+                                        <figcaption class="recent__caption">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</figcaption>
+                                    </figure>
+                                    <h3 class="recent__category">Animation</h3>
+                                    <button class="recent__button">
+                                        More info <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="recent__item swiper-slide">
+                                <a href="#" class="recent__link">
+                                    <figure class="recent__figure">
+                                        <img src="assets/imgs/showcases/education.webp" alt="" class="recent__img">
+                                        <figcaption class="recent__caption">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</figcaption>
+                                    </figure>
+                                    <h3 class="recent__category">Animation</h3>
+                                    <button class="recent__button">
+                                        More info <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </a>
+                            </li>
+
+                            <li class="recent__item swiper-slide">
+                                <a href="#" class="recent__link">
+                                    <figure class="recent__figure">
+                                        <img src="assets/imgs/showcases/education.webp" alt="" class="recent__img">
+                                        <figcaption class="recent__caption">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</figcaption>
+                                    </figure>
+                                    <h3 class="recent__category">Animation</h3>
+                                    <button class="recent__button">
+                                        More info <i class="ri-arrow-right-line"></i>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <div class="about section" id="about" data-section="about">
@@ -199,7 +298,7 @@
                         </ul>
 
                         <footer class="about__footer">
-                            <a href="#work" class="button button__about">
+                            <a href="#projects" class="button button__about">
                                 Projects
                                 <i class="ri-arrow-right-line"></i>
                             </a>
@@ -215,11 +314,129 @@
             </div>
         </div>
 
-        <div class="news" id="news" data-section="news"></div>
+        <div class="news" id="news" data-section="news">
+            <div class="news__container container">
+                <section class="news__content">
+
+                    <header class="news__header">
+                        <h2 class="news__title">News</h2>
+                        <h6 class="news__subtitle">Recent news</h6>
+                    </header>
+
+                    <div class="news__swiper swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="news__item swiper-slide">
+                                <figure class="news__figure">
+                                    <img src="assets/imgs/showcases/blog-post-1-cover.webp" alt="" class="news__img" />
+                                </figure>
+
+                                <div class="news__data">
+                                    <h3 class="news__title">EEFA Studio Embarks...</h3>
+                                    <span class="news__date">2024/03/05</span>
+                                    <p class="news__description">EEFA Studio proudly ann...</p>
+                                </div>
+
+                                <div class="news__more">
+                                    <a href="#" class="news__link">
+                                        read more
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__item swiper-slide">
+                                <figure class="news__figure">
+                                    <img src="assets/imgs/showcases/blog-post-1-cover.webp" alt="" class="news__img" />
+                                </figure>
+
+                                <div class="news__data">
+                                    <h3 class="news__title">EEFA Studio Embarks...</h3>
+                                    <span class="news__date">2024/03/05</span>
+                                    <p class="news__description">EEFA Studio proudly ann...</p>
+                                </div>
+
+                                <div class="news__more">
+                                    <a href="#" class="news__link">
+                                        read more
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__item swiper-slide">
+                                <figure class="news__figure">
+                                    <img src="assets/imgs/showcases/blog-post-1-cover.webp" alt="" class="news__img" />
+                                </figure>
+
+                                <div class="news__data">
+                                    <h3 class="news__title">EEFA Studio Embarks...</h3>
+                                    <span class="news__date">2024/03/05</span>
+                                    <p class="news__description">EEFA Studio proudly ann...</p>
+                                </div>
+
+                                <div class="news__more">
+                                    <a href="#" class="news__link">
+                                        read more
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="news__item swiper-slide">
+                                <figure class="news__figure">
+                                    <img src="assets/imgs/showcases/blog-post-1-cover.webp" alt="" class="news__img" />
+                                </figure>
+
+                                <div class="news__data">
+                                    <h3 class="news__title">EEFA Studio Embarks...</h3>
+                                    <span class="news__date">2024/03/05</span>
+                                    <p class="news__description">EEFA Studio proudly ann...</p>
+                                </div>
+
+                                <div class="news__more">
+                                    <a href="#" class="news__link">
+                                        read more
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer section" id="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#home" class="footer__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#recent" class="footer__link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#about" class="footer__link">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#news" class="footer__link">
+                            News
+                        </a>
+                    </li>
+                </ul>
 
+                <div class="footer__copyright">
+                    <span>Developed and Designed by PNA</span>
+                    <span>&copy; All right reserved</span>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
