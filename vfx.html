@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .container {
+            max-width: fit-content;
+        }
+    </style>
+    <title>VFX</title>
+</head>
+
+<body>
+
+    <div class="vfx">
+        <div class="vfx__container container">
+            <div class="vfx__content">
+
+                <div class="vfx__data">
+                    <h1 class="vfx__title">
+                        Lumadin VFX
+                    </h1>
+                    <p class="vfx__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae eius eligendi ab
+                        accusantium dicta pariatur, odio perspiciatis explicabo molestias debitis.
+                    </p>
+                </div>
+
+                <ul class="vfx__list">
+                    <li class="vfx__item" id="vfx-item-1">
+                        <div class="vfx__track">
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="vfx__item" id="vfx-item-2">
+                        <div class="vfx__track">
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="vfx__item" id="vfx-item-3">
+                        <div class="vfx__track">
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/1.jpg" alt="" class="vfx__img">
+                            </figure>
+                            <figure class="vfx__figure">
+                                <img src="assets/imgs/vfx/2.jpg" alt="" class="vfx__img">
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+        /* slider and confetti */
+
+        function duplicateSliders(sliderId) {
+            const sliderTrack = document.querySelector(`${sliderId} .vfx__track`);
+            const slides = Array.from(sliderTrack.children);
+            console.log(slides);
+            slides.forEach(slide => {
+                const clone = slide.cloneNode(true);
+                sliderTrack.appendChild(clone);
+            });
+        }
+
+        duplicateSliders("#vfx-item-1");
+        duplicateSliders("#vfx-item-2");
+        duplicateSliders("#vfx-item-3");
+
+        function launchConfetti() {
+            const colors = ["#e63946", "#a8dadc", "#1d3557"];
+
+            setInterval(() => {
+                confetti({
+                    particleCount: 3,
+                    angle: 90,
+                    spread: 50,
+                    startVelocity: 20,
+                    ticks: 1000,
+                    gravity: 0.7,
+                    origin: { x: Math.random(), y: 0 },
+                    colors
+                });
+            }, (200));
+        }
+
+        window.addEventListener("load", () => {
+            launchConfetti();
+        });
+    </script>
+</body>
+
+</html>

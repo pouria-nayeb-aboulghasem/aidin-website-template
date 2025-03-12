@@ -20,17 +20,15 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive);
 
 const homeSlides = document.querySelectorAll(".home__figure");
+const homeTitle = document.querySelector(".home__title");
+const homeImg = document.querySelector(".home__img");
+const homeSubTitle = document.querySelector(".home__subtitle");
+const directorValue = document.querySelector("#director-value");
+const producerValue = document.querySelector("#producer-value");
+const yearValue = document.querySelector("#year-value");
 
 homeSlides.forEach(homeSlide => {
     homeSlide.addEventListener("click", (e) => {
-        const homeTitle = document.querySelector(".home__title");
-        const homeImg = document.querySelector(".home__img");
-        const homeSubTitle = document.querySelector(".home__subtitle");
-        const directorValue = document.querySelector("#director-value");
-        const producerValue = document.querySelector("#producer-value");
-        const yearValue = document.querySelector("#year-value");
-
-
         homeImg.src = `assets/imgs/showcases/${e.currentTarget.dataset.img}`;
         homeTitle.textContent = e.currentTarget.dataset.title;
         homeSubTitle.textContent = e.currentTarget.dataset.subtitle;
