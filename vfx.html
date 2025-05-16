@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .container {
@@ -14,6 +15,248 @@
 </head>
 
 <body>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item" title="منو">
+                    <button class="nav__button nav__button--rotate" id="main-menu">
+                        <i class="ri-menu-2-line" id="menu-icon"></i>
+                    </button>
+                </li>
+                <li class="nav__item" title="خانه">
+                    <a href="#home" class="nav__link">
+                        <i class="ri-home-2-line"></i>
+                    </a>
+                </li>
+                <li class="nav__item" title="جدیدترین ها">
+                    <a href="#recent" class="nav__link">
+                        <i class="ri-clapperboard-line"></i>
+                    </a>
+                </li>
+                <li class="nav__item" title="درباره ما">
+                    <a href="#about" class="nav__link" title="">
+                        <i class="ri-medal-line"></i>
+                    </a>
+                </li>
+                <li class="nav__item" title="خبرنامه">
+                    <a href="#news" class="nav__link">
+                        <i class="ri-news-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="social__list">
+        <li class="social__item" title="تلفن تماس">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-phone-line"></i>
+            </a>
+        </li>
+        <li class="social__item" title="اینستاگرام">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-instagram-line"></i>
+            </a>
+        </li>
+        <li class="social__item" title="وانس آپ">
+            <a href="#" target="_blank" class="social__link">
+                <i class="ri-whatsapp-line"></i>
+            </a>
+        </li>
+    </ul>
+
+    <!-- nav -->
+    <div class="menu__nav" id="menu-nav">
+
+        <!-- desktop menu -->
+        <div class="menu" id="menu">
+            <div class="menu__container container">
+                <div class="menu__content">
+
+                    <ul class="menu__row menu__row--lg">
+                        <li class="menu__col menu__col--1">
+                            <section class="menu__data">
+                                <h5>General</h5>
+
+                                <nav class="manu__nav">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">About</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Contact us</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Signup/Signin</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </li>
+
+                        <li class="menu__col menu__col--2">
+                            <section class="menu__data">
+                                <h5>Color</h5>
+
+                                <nav class="manu__nav">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Color</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </li>
+
+                        <li class="menu__col menu__col--3">
+                            <section class="menu__data">
+                                <h5>VFX</h5>
+
+                                <nav class="manu__nav">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">VFX</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </li>
+
+                        <li class="menu__col menu__col--4">
+                            <section class="menu__data">
+                                <h5>Tools</h5>
+
+                                <nav class="manu__nav">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Market</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Education</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </li>
+
+                        <li class="menu__col menu__col--5">
+                            <section class="menu__data">
+                                <h5>Design</h5>
+
+                                <nav class="manu__nav">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">StoryBoard</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">StoryReels</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">AI</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Articles</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </section>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- mobile menu -->
+    <ul class="menu__row menu__row--sm">
+        <li class="menu__col menu__col--1">
+            <section class="menu__data">
+                <h5>Lumadin Inc.</h5>
+
+                <nav class="manu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </li>
+
+        <li class="menu__col menu__col--2">
+            <section class="menu__data">
+                <h5>TV</h5>
+
+                <nav class="manu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">VFX</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Color</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </li>
+
+        <li class="menu__col menu__col--3">
+            <section class="menu__data">
+                <h5>Feature film</h5>
+
+                <nav class="manu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Film production</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Behind the scenes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </li>
+
+        <li class="menu__col menu__col--4">
+            <section class="menu__data">
+                <h5>Advertisement</h5>
+
+                <nav class="manu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Clips</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Character and logo design</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Motion graphics</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </li>
+
+        <li class="menu__col menu__col--5">
+            <section class="menu__data">
+                <h5>Cooperation</h5>
+
+                <nav class="manu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Hiring</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </li>
+    </ul>
 
     <div class="vfx">
         <div class="vfx__container container">
@@ -87,6 +330,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         /* slider and confetti */
 

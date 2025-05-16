@@ -36,51 +36,22 @@ homeSlides.forEach(homeSlide => {
         producerValue.textContent = e.currentTarget.dataset.producer;
         yearValue.textContent = e.currentTarget.dataset.year;
     });
-});;
-
-// swiper
-
-let homeSwiper = new Swiper(".home__swiper", {
-    slidesPerView: 1.1,
-    spaceBetween: 24,
-    grabCursor: true,
-    breakpoints: {
-        576: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 5,
-            spaceBetween: 48
-        }
-    }
 });
 
-let recentSwiper = new Swiper(".recent__swiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 24,
-    grabCursor: true,
-    breakpoints: {
-        576: {
-            slidesPerView: 3
-        },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 48
-        }
-    }
-});
+// menuNav
+const menuRowLg = document.querySelector(".menu__row--lg"),
+    menuRowSm = document.querySelector(".menu__row--sm"),
+    menuToggle = document.querySelector(".nav__button--rotate"),
+    menuIcon = document.querySelector("#menu-icon"),
+    menuNav = document.querySelector(".menu__nav");
 
-let newsSwiper = new Swiper(".news__swiper", {
-    slidesPerView: 1.5,
-    spaceBetween: 24,
-    grabCursor: true,
-    breakpoints: {
-        576: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 48
-        }
-    }
+let toggleClose = false;
+menuToggle.addEventListener("click", () => {
+    menuRowLg.classList.toggle("active");
+    menuNav.classList.toggle("active");
+    menuRowSm.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+
+    menuIcon.className = toggleClose ? "ri-menu-2-line" : "ri-close-large-line";
+    toggleClose = !toggleClose;
 });
